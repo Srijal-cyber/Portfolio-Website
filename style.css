@@ -1,0 +1,415 @@
+*{
+margin:0px;
+padding:0px;
+box-sizing:border-box;
+}
+
+header{
+	height:60dvh;
+	background-color:black;
+}
+
+.index{
+	height:50px;
+	background-color:black;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:0 25px;
+	padding-left:125px;
+	padding-right:90px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	z-index:1000;
+}
+
+
+.name {
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 550;
+  color: white;
+  display: inline-block;
+}
+	
+.head{
+	height:50px;
+	width:33%;
+	background-color:black;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:0 9px;
+}
+a{
+	color:inherit;
+	text-decoration:none;
+}
+
+.col{
+	background-color:black;
+	margin:5px;
+	padding:10px 25px;
+	color:white;
+	border-radius:5px;
+	text-decoration:none;
+	border:none;
+	font-size:16px;
+	
+}
+
+.col:hover {
+  border:2px solid white;
+  cursor:pointer;
+  
+}
+
+.context{
+	height:385px;
+	border:2px solid black;
+	background-color:black;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:50px 100px;
+	position:relative;
+	padding-right:300px;
+}
+
+.me{
+	height:250px;
+	width:40%;
+	padding:4px 10px;
+	padding-left:30px;
+	display:flex;
+	flex-direction:column;
+}
+
+
+.button{
+	border-radius:5px;
+	height:45px;
+	width:170px;
+	display:flex;
+	align-items:center;
+	gap:6px;
+}
+.btn{
+	width:370px;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	margin-top:auto;
+}
+
+.viewProjects {
+  background-color: #4da3ff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.viewProjects:hover {
+  background-color: #1f7fe0;
+  transform: translateY(-2px);
+}
+
+.ContactMe {
+  background-color: #e0e0e0;
+  color: #444;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.ContactMe:hover {
+  background-color: #c9c9c9;
+  transform: translateY(-2px);
+}
+	
+	.imageBox {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%; /* makes it circular */
+  overflow: hidden;   /* hides overflow outside circle */
+  border: 3px solid #4da3ff;
+  box-shadow: 0 0 15px #00aaff,
+                0 0 30px #00aaff;
+}
+
+.imageBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps image properly cropped */
+}
+
+.git{
+	height:50px;
+	width:200px;
+	position: absolute;
+	bottom: 0;
+	left: 135px;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	background-color:black;
+}
+.git i{
+	color:white;
+	font-size:24px;
+}
+.git i:hover{
+	cursor:pointer;
+}
+
+.aboutMe{
+	height:300px;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:50px 300px;
+	background-color: #f7f7f7;
+}
+
+.meImg{
+	height:250px;
+	width:250px;
+	overflow: hidden;   /* hides overflow outside circle */
+	border: 3px solid #4da3ff;
+	border-radius:20px;
+}
+
+.meText{
+	height:270px;
+	width:400px;
+    padding: 5px;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+	position:relative;
+}
+
+.meImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps image properly cropped */
+  border-radius:20px;
+}
+
+.download {
+  background: purple;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 13px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position:absolute;
+  bottom:5px;
+  display:flex;
+	align-items:center;
+	gap:10px;
+}
+
+.download:hover {
+  background-color: #a020f0;
+}
+
+.skillMe{
+	height:200px;
+	display:flex;
+	flex-direction: column;
+	font-family: Arial, sans-serif;
+	align-items:center;
+	border-radius: 10px;
+	justify-content:space-between;
+	padding:25px;
+	background-color: #f0f8ff;
+}
+
+.skillList{
+	height:60px;
+	width:500px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.skillList .box{
+	height:55px;
+	width:140px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	gap:10px;
+	font-size:14px;
+	background-color:white;
+	border-radius:10px;
+}
+
+.top{
+		color:#00aaff;
+        font-size:13px;
+		font-weight:540;
+        margin:0;	
+}
+
+.middle {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.projectMe{
+	height:300px;
+	display:flex;
+	flex-direction: column;
+	font-family: Arial, sans-serif;
+	align-items:center;
+	border-radius: 10px;
+	justify-content:space-between;
+	padding:25px;
+	
+}
+
+
+.top2{
+		color:#00aaff;
+        font-size:13px;
+		font-weight:540;
+        margin:0;	
+}
+
+.middle2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.middle3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.projectList {
+  height: 160px;
+  width: 200px;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  background: #f8f9ff;
+  border: 1px solid #ddd;
+
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+
+.add {
+  height: 60px;
+  width: 60px;
+
+  border: 2px dashed #4da3ff;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+  color: #4da3ff;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add:hover {
+  background: #4da3ff;
+  color: white;
+  transform: scale(1.1);
+}
+
+.contactMe{
+	height:150px;
+	display:flex;
+	flex-direction: column;
+	font-family: Arial, sans-serif;
+	align-items:center;
+	border-radius: 10px;
+	justify-content:space-between;
+	padding:25px;
+	background-color:#e9edf3;
+}
+
+
+.contactList {
+  width: 550px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactList .box {
+  width: 170px;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: white;
+  border-radius: 10px;
+}
+
+.box i {
+  font-size: 28px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.info p {
+  margin: 2px 0 0;
+  font-size: 11px;
+  color: #666;
+}
+
+.endLine{
+	height:30px;
+	width:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color:black;
+	color:white;
+	font-size:12px;
+	margin:0;
+	Padding:0;
+}
