@@ -413,3 +413,75 @@ a{
 	margin:0;
 	Padding:0;
 }
+
+.addingProject {
+  height: 500px;
+  width: 700px;
+  border: 2px solid black;
+  padding: 50px;
+  background-color: #d1d5db;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, 65%);
+  display:none;
+}
+
+label {
+  display: block;      /* puts label above input */
+  font-size: 12px;     /* small text */
+  margin-bottom: 5px;  /* space between label and box */
+  color: blue;
+}
+
+input {
+  width: 500px;
+  padding: 10px;
+  border: 2px solid blue;
+  border-radius: 8px; /* rounded corners */
+  
+}
+
+input::placeholder{
+  color: gray;
+  font-style: bold;
+  font-size: 14px;
+}
+.addImages {
+  height: 90px;
+  width: 90px;
+
+  border: 2px dashed #4da3ff;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+  color: #4da3ff;
+
+  cursor: pointer;
+  transition: 0.3s;
+  
+}
+
+.addImages:hover {
+  background: #4da3ff;
+  color: white;
+  transform: scale(1.1);
+}
+.addImage{
+	color:blue;
+	font-size:14px;
+}
+.wholeAdd{
+	margin-top:20px;
+	margin-left:37%;
+
+}
